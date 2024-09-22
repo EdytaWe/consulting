@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            box-shadow: -3px 13px 17px -27px;
+        }
+
+        .banner__title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            color: var(--color-white);
+            padding: 0 25px;
+            position: absolute;
+            top: 0;
+        }
+
+        .banner__title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            padding: 50px 0;
+        }
+
+        .banner__title__above {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+
+        .banner__title__description {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (min-width: 800px) {
+            .banner__title {
+                width: 50%;
+                padding: 0 0 0 50px;
+            }
+
+            .banner__title h1 {
+                font-size: 4.5rem;
+                font-weight: 700;
+                padding: 40px 0;
+            }
+
+            .banner__title__above {
+                font-size: 2.5rem;
+                padding-bottom: 20px;
+            }
+
+            .banner__title__description {
+                font-size: 1.3rem;
+                font-weight: 100;
+            }
+        }
+    </style>
+    <link rel="preload" as="image" href="./assets/banner.jpg">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" href="style/desk.css" media="screen and (min-width:800px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+</head>
+
+<body class="league-spartan-normal">
+    <header class="header-area" style="background-color: #fff;">
+        <div class="container navbar">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="">
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <span class="mobile__nav__close">x</span>
+                    <a href="">
+                        <li>strona główna</li>
+                    </a>
+                    <a href="">
+                        <li>oferta</li>
+                    </a>
+                    <a href="">
+                        <li>blog</li>
+                    </a>
+                    <a href="">
+                        <li>zespół</li>
+                    </a>
+                    <a href="">
+                        <li>kontakt</li>
+                    </a>
+                </ul>
+            </nav>
+            <span class="mobile__nav"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                    viewBox="0 0 512 512">
+                    <path fill="#078586" d="M32 96v64h448V96zm0 128v64h448v-64zm0 128v64h448v-64z" />
+                </svg></span>
+        </div>
+    </header>
+    <div class="banner" style="width: 100vw; height: 100wh; position: relative;">
+        <img srcset="./assets/banner.jpg" style="width: 100vw;
+  height: 100vh; object-fit: cover;" alt="">
+        <div class="container banner__title">
+            <h1>Pomagamy<br>przedsiębiorcą</h1>
+            <span class="banner__title__above">Zoptymalizować biznes</span>
+            <span class="banner__title__description">Nasza wizja lepszego rozwoju</span>
+        </div>
+    </div>
+    <section class="offer" style="padding: 100px 0;">
+        <div class="container">
+            <div class="offer__description" style="text-align: center;">
+                <p class="little__title">Nasza oferta</p>
+                <h2 class="section__title">Dzięki nam osiągniesz sukces</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nisi mollitia reprehenderit quas
+                    sapiente praesentium excepturi beatae, autem porro corrupti distinctio possimus sequi iusto eveniet
+                    adipisci dolore voluptatum ratione incidunt!</p>
+            </div>
+            <div class="offer__tails">
+
+                <div class="offer__tail">
+                    <a href="">
+                        <img src="./assets/tail.jpg" alt="" width="100%" height="430" style="object-fit: cover;">
+                        <div class="offer__tail__description" style="color: #fff;">
+                            <h3 style="font-weight: 600; font-size: 1.5rem; padding-bottom: 5px;">Szkolenia</h3>
+                            <p class="offer__tail__description__show" style="padding-bottom: 5px;">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, nisi tenetur adipisci quasi voluptate eum
+                                quia eveniet consequuntur vitae.</p>
+                            <p><img src="./assets/arrow-right.svg" alt="" style="padding-right: 10px;" loading="lazy">Czytaj więcej</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="offer__tail">
+                    <a href="">
+                        <img src="./assets/tail.jpg" alt="" width="100%" height="430" style="object-fit: cover;">
+                        <div class="offer__tail__description" style="color: #fff;">
+                            <h3 style="font-weight: 600; font-size: 1.5rem; padding-bottom: 5px;">Doradztwo</h3>
+                            <p class="offer__tail__description__show" style="padding-bottom: 5px;">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, nisi tenetur adipisci quasi voluptate eum
+                                quia eveniet consequuntur vitae.</p>
+                            <p><img src="./assets/arrow-right.svg" alt="" style="padding-right: 10px;" loading="lazy">Czytaj więcej</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="offer__tail">
+                    <a href="">
+                        <img src="./assets/tail.jpg" alt="" width="100%" height="430" style="object-fit: cover;">
+                        <div class="offer__tail__description" style="color: #fff;">
+                            <h3 style="font-weight: 600; font-size: 1.5rem; padding-bottom: 5px;">Wdrożenia</h3>
+                            <p class="offer__tail__description__show" style="padding-bottom: 5px;">Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Officiis, nisi tenetur adipisci quasi voluptate eum
+                                quia eveniet consequuntur vitae.</p>
+                            <p><img src="./assets/arrow-right.svg" alt="" style="padding-right: 10px;" loading="lazy">Czytaj więcej</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team container" style="padding-bottom: 100px;">
+        <div class="team__image">
+            <div class="team__image__box">
+                <img src="./assets/team.jpg" alt="" width="730" height="431" style="object-fit: cover;">
+                <p class="team__image__box__description">20+ Lat Doświadczenia</p>
+            </div>
+        </div>
+        <div class="team__description">
+            <span class="little__title">Praktyka</span>
+            <h2 class="section__title">Jesteśmy zespołem praktyków</h2>
+            <p>Posiadamy nie tylko wiedzę. Wyróżnia nas fakt, że pracowaliśmy przez wiele lat w firmach zdobywając
+                doświadczenie, które możemy wykorzystać w obecnej działalności.</p>
+            <div class="team__description__below">
+                <div class="team__description__left">
+                    <img src="./assets/cil--chart-line.svg" alt="">
+                    <h3 style="font-weight: 600; font-size: 1.5rem; padding:14px 0;">Jakiś tytuł</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa placeat dignissimos,
+                        asperiores iure porro quis reiciendis impedit.</p>
+                </div>
+                <div class="team__description__right">
+                    <img src="./assets/fa6-solid--people-group.svg" alt="">
+                    <h3 style="font-weight: 600; font-size: 1.5rem; padding: 14px 0;">Jakiś tytuł</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsa placeat dignissimos,
+                        asperiores iure porro quis reiciendis impedit.</p>
+                </div>
+            </div>
+            <a href="" class="button">Czytaj więcej</a>
+        </div>
+    </section>
+    <section class="work">
+        <div class="container">
+            <p class="little__title">Zobacz jakie to proste</p>
+            <h2 class="section__title">Działamy w całym kraju</h2>
+            <div class="work__tails">
+                <div class="work__tail">
+                    <span class="work__tail__step">KROK 1</span><br>
+                    <div style="display: flex;align-items: center;padding: 20px 0;">
+                        <img src="./assets/solar--hand-stars-outline.svg" alt="">
+                        <h3 class="work__tail__title">Pierwszy kontakt</h3>
+
+                    </div>
+                    <p class="work__tail__description">Możesz do nas napisać lub zadzwonić. Postaramy się odpowiedzieć na wszystkie pytania już podczas pierwszej rozmowy.</p>
+                </div>
+                <div class="work__tail">
+                    <span class="work__tail__step">KROK 2</span><br>
+                    <div style="display: flex;align-items: center;padding: 20px 0;">
+                        <img src="./assets/solar--hand-stars-outline.svg" alt="">
+                        <h3 class="work__tail__title">Pierwszy kontakt</h3>
+
+                    </div>
+                    <p class="work__tail__description">Możesz do nas napisać lub zadzwonić. Postaramy się odpowiedzieć na wszystkie pytania już podczas pierwszej rozmowy.</p>
+                </div>
+                <div class="work__tail">
+                    <span class="work__tail__step">KROK 3</span><br>
+                    <div style="display: flex;align-items: center;padding: 20px 0;">
+                        <img src="./assets/solar--hand-stars-outline.svg" alt="">
+                        <h3 class="work__tail__title">Pierwszy kontakt</h3>
+
+                    </div>
+                    <p class="work__tail__description">Możesz do nas napisać lub zadzwonić. Postaramy się odpowiedzieć na wszystkie pytania już podczas pierwszej rozmowy.</p>
+                </div>
+                <div class="work__tail">
+                    <span class="work__tail__step">KROK 4</span><br>
+                    <div style="display: flex;align-items: center;padding: 20px 0;">
+                        <img src="./assets/solar--hand-stars-outline.svg" alt="">
+                        <h3 class="work__tail__title">Rozpoczęcie współpracy</h3>
+
+                    </div>
+                    <p class="work__tail__description">Możesz do nas napisać lub zadzwonić. Postaramy się odpowiedzieć na wszystkie pytania już podczas pierwszej rozmowy.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container footer__section">
+            <div class="footer__tail">
+                <img src="./assets/logo.png" alt="">
+                <p>Tu będzie napisane coś mądrego, a logo będzie białe na czarnym tle.</p>
+
+            </div>
+            <div class="footer__tail">
+                <p>Bądźmy w kontakcie</p>
+                <img src="./assets/team.jpg" alt="" width="50" height="50" style="object-fit: cover; border-radius: 50%;">
+                <p>tel.</p>
+                <p>mail:</p>
+
+            </div>
+            <div class="footer__tail"></div>
+                <img src="./assets/team.jpg" alt="" width="50" height="50" style="object-fit: cover; border-radius: 50%;">
+                
+
+            </div>
+        </div>
+        <div class="reserved">2024 Process Consulting</div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

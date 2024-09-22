@@ -1,0 +1,135 @@
+:root {
+	--color-first: #078586;
+	--color-black: #282f3b;
+	--color-white: #fff;
+}
+.container {
+	max-width: 800px;
+	padding: 0 20px;
+}
+.button {
+	background-color: var(--color-first);
+	color: var(--color-white);
+	padding: 20px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	width: max-content;
+	border-radius: 10px 0;
+}
+h3 {
+	font-size: 1.5rem;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+.navigation {
+	background-color: var(--color-white);
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	right: 0;
+	top: 0;
+	width: 300px;
+	height: 100vh;
+	box-shadow: 2px 7px 10px rgba(169, 156, 156, 0.5);
+	padding-top: 50px;
+	transform: translate(100%);
+	transition: 1s ease-in-out transform;
+}
+.navigation.is-active {
+	transform: translateX(0); /* wysuwam menu z lewej strony ekranu */
+}
+.navigation a {
+	text-transform: uppercase;
+	padding: 20px;
+	color: var(--color-black);
+	font-weight: 600;
+}
+.navigation a:hover {
+	color: var(--color-first);
+}
+.navigation a::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	left: 50px;
+	height: 1px;
+	width: 200px;
+	background-color: var(--color-first);
+}
+.mobile__nav__close {
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.section__title {
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 20px 0;
+}
+.little__title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--color-first);
+}
+.offer__description p:last-child {
+	padding: 0 10%;
+}
+.offer__tails {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.offer__tail {
+	max-width: 350px;
+	height: 430px;
+	margin: 40px auto;
+	position: relative;
+	background-color: black;
+}
+.offer__tail__description {
+	position: absolute;
+	bottom: 30px;
+	padding: 20px;
+	color: var(--color-white);
+}
+.offer__tail img {
+	position: relative;
+	opacity: 0.8;
+}
+.team__image__box {
+	position: relative;
+}
+.team__image__box img {
+	max-width: 100%;
+}
+.team__image__box__description {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	background-color: #fff;
+	padding: 20px;
+	font-weight: 700;
+}
+.team__description {
+	padding-top: 30px;
+}
+.team__description__left,
+.team__description__right {
+	padding-top: 20px;
+}
+.team__description__right {
+	text-align: end;
+}
+.team__description__below h3 {
+	padding: 10px 0;
+}
