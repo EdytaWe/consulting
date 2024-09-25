@@ -240,14 +240,14 @@ footer{
 .blog__article__image__title{
 	position: absolute; top: 0;background-color: var(--color-dar);color: #fff;padding: 12px;border-radius: 10px 0;text-transform: uppercase;
 }
-.blog__article__description::after{
+/* .blog__article__description::after{
 	content: '';
 	position: absolute;
 	width: 300px;
 	height: 2px;
 	background-color: var(--color-grey);
 	bottom: 45px;
-}
+} */
 .blog__article__description{
 	padding: 40px;
 }
