@@ -51,6 +51,7 @@ html {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color: inherit;
 }
 *{
 	font-family: "League Spartan", sans-serif;
