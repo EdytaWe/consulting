@@ -372,6 +372,7 @@ footer{
 	bottom: 0;
 	left: 20px;
 	object-fit: cover;
+	border-radius: 10px 10px 0 0;
   }
 .study__all__description{
 	padding: 50px;
