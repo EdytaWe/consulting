@@ -83,12 +83,14 @@ h3{
 	z-index: 1;
 	background-color: black;
 	transition: 0.5s ease;
+	border-radius: 15px;
 }
 .offer__tail img {
 	position: relative;
 	z-index: -1;
 	transition: 0.5s ease;
 	opacity: 0.8;
+	border-radius: 15px;
 }
 .offer__tail__description {
 	position: absolute;
@@ -135,6 +137,7 @@ h3{
 }
 .team__image img {
 	max-width: 100%;
+	border-radius: 15px
 }
 .team__description__below {
 	display: flex;
@@ -165,6 +168,7 @@ h3{
 	font-size: 1.5rem;
 	padding: 20px;
 	box-shadow: -4px 13px 42px -21px var(--color-black);
+	border-radius: 10px 0;
 }
 .work{
 	background-color: var(--color-grey);
@@ -206,7 +210,7 @@ footer{
     background-image: url("../assets/team.jpg");
   
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 300px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -275,4 +279,190 @@ footer{
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
+}
+.study{
+	display: flex;
+	font-size: 1.1rem;
+}
+.study__all{
+	padding: 50px 50px 0 0;
+	border-right: 2px solid var(--color-grey);
+	/* min-width: 150px; */
+	max-width: 300px;
+	flex-grow: 2;
+}
+.study__offer{
+	position: relative;
+	text-align: center;
+}
+.study__offer::after{
+	position: absolute;
+  content: "";
+  width: 10px;
+  left: -10px;
+  height: 10px;
+  border-radius: 10px;
+  background: var(--color-first);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.study__offer::before{
+	position: absolute;
+  content: "";
+  width: 40px;
+  left: 0px;
+  height: 2px;
+  background: var(--color-first);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.accordion__box{
+	min-width: 250px;
+	max-width: 300px;
+	padding-top: 20px;
+}
+.accordion{
+	border-bottom: 2px solid var(--color-grey);
+}
+.accordion__title {
+	background-color: var(--color-white);
+	color: var(--color-dar);
+	cursor: pointer;
+	font-size: 1.3rem;
+	padding: 18px 0;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .activeacc .accordion__title, .accordion:hover {
+	color: var(--color-first)
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 10px 0 10px 20px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	font-size: 1.2rem;
+  }
+  .panel li{
+	padding: 10px 0;
+	border-bottom: 1px solid var(--color-grey);
+  }
+.study__all__description{
+	padding: 50px;
+}
+.study__all__description__columns{
+	display: flex;
+	padding-top: 30px;
+}
+.left__bar{
+	padding-right: 30px;
+	width: 50%;
+}
+.right__bar{
+	padding-left: 30px;
+	width: 50%;
+}
+.study__check{
+	box-shadow: 2px 4px 14px -6px var(--color-dar);
+	border-radius: 15px;
+	padding: 40px;
+}
+.study__check__padding{
+	margin-top: 30px;
+}
+.study__check img{
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.study__check p{
+	padding-top: 20px;
+	line-height: 1.3rem;
+}
+.study__check:hover .rotate-vert-center {
+	-webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+ @-webkit-keyframes rotate-vert-center {
+	0% {
+	  -webkit-transform: rotateY(0);
+			  transform: rotateY(0);
+	}
+	100% {
+	  -webkit-transform: rotateY(360deg);
+			  transform: rotateY(360deg);
+	}
+  }
+  @keyframes rotate-vert-center {
+	0% {
+	  -webkit-transform: rotateY(0);
+			  transform: rotateY(0);
+	}
+	100% {
+	  -webkit-transform: rotateY(360deg);
+			  transform: rotateY(360deg);
+	}
+  }
+  
+.before__footer__container{
+	display: flex;
+}
+.before__footer__left, .before__footer__right{
+	width: 50%;
+	position: relative;
+	padding: 40px 0;
+}
+.before__footer__left::after{
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 80px;
+	bottom: 30px;
+	left: -15px;
+	background-color: var(--color-white);
+}
+.before__footer__title{
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+.before__footer__title__mini{
+	font-size: 1.3rem;
+}
+.before__footer__right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.before__footer__right p{
+	font-size: 3rem;
+	padding-left: 50px;
+}
+@media screen and (max-width: 1120px) {
+	.study__all__description__columns{
+		display: flex;
+		flex-direction: column;
+		padding-top: 30px;
+	}
+	.left__bar{
+		padding-right: 0;
+		width: 100%;
+	}
+	.right__bar{
+		padding-left: 0;
+		width: 100%;
+	}
+	.study__check__padding{
+		margin-top: 0;
+	}
+	.study__check{
+		margin-top: 30px;
+	}
 }

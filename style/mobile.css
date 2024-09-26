@@ -98,6 +98,7 @@ h3 {
 	margin: 40px auto;
 	position: relative;
 	background-color: black;
+	border-radius: 15px;
 }
 .offer__tail__description {
 	position: absolute;
@@ -108,12 +109,14 @@ h3 {
 .offer__tail img {
 	position: relative;
 	opacity: 0.8;
+	border-radius: 15px;
 }
 .team__image__box {
 	position: relative;
 }
 .team__image__box img {
 	max-width: 100%;
+	border-radius: 15px;
 }
 .team__image__box__description {
 	position: absolute;
@@ -122,6 +125,7 @@ h3 {
 	background-color: #fff;
 	padding: 20px;
 	font-weight: 700;
+	border-radius: 10px 0 10px;
 }
 .team__description {
 	padding-top: 30px;
@@ -165,7 +169,7 @@ footer{
     background-image: url("../assets/team.jpg");
   
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 300px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -229,4 +233,132 @@ footer{
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
+}
+
+/* szkolenia */
+.study{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	font-size: 1.1rem;
+}
+.study__all{
+	width: 100%;
+}
+.study__offer{
+	position: relative;
+	text-align: center;
+}
+.study__offer::after{
+	position: absolute;
+  content: "";
+  width: 10px;
+  left: -10px;
+  height: 10px;
+  border-radius: 10px;
+  background: var(--color-first);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.study__offer::before{
+	position: absolute;
+  content: "";
+  width: 40px;
+  left: 0px;
+  height: 2px;
+  background: var(--color-first);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.accordion__box{
+	padding-top: 20px;
+}
+.accordion{
+	border-bottom: 2px solid var(--color-grey);
+}
+.accordion__title {
+	background-color: var(--color-white);
+	color: var(--color-dar);
+	cursor: pointer;
+	font-size: 1.3rem;
+	padding: 18px 0;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .activeacc, .accordion:hover {
+	color: var(--color-first)
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 10px 0 10px 20px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	font-size: 1.2rem;
+  }
+  .panel li{
+	padding: 10px 0;
+	border-bottom: 1px solid var(--color-grey);
+  }
+.study__all__description{
+	padding: 50px 0;
+}
+.study__all__description__columns{
+	padding-top: 30px;
+}
+
+.study__check{
+	box-shadow: 2px 4px 14px -6px var(--color-dar);
+	border-radius: 15px;
+	padding: 40px;
+	margin-top: 30px;
+}
+.study__check img{
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.study__check p{
+	padding-top: 20px;
+	line-height: 1.3rem;
+}
+
+.before__footer__left{
+	position: relative;
+	padding: 40px 20px;
+}
+.before__footer__right{
+	padding: 0 20px 20px;
+}
+.before__footer__left::after{
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 80px;
+	bottom: 35px;
+	left: 0;
+	background-color: var(--color-white);
+}
+.before__footer__title{
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.before__footer__title__mini{
+	font-size: 1.2rem;
+}
+.before__footer__right{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.before__footer__right p{
+	font-size: 3rem;
+	padding-left: 50px;
 }
