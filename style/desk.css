@@ -356,6 +356,23 @@ footer{
 	padding: 10px 0;
 	border-bottom: 1px solid var(--color-grey);
   }
+  .study__all__pdf{
+	background-color: var(--color-first);
+	color: var(--color-white);
+	border-radius: 15px;
+	font-size: 1.8rem;
+	padding: 50px 20px;
+	margin-top: 70px;
+	text-align: center;
+	position: relative;
+	height: 450px;
+  }
+  .study__all__pdf img{
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	object-fit: cover;
+  }
 .study__all__description{
 	padding: 50px;
 }

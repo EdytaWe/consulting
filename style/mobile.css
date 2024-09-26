@@ -307,6 +307,19 @@ footer{
 	padding: 10px 0;
 	border-bottom: 1px solid var(--color-grey);
   }
+  .study__all__pdf{
+	background-color: var(--color-grey);
+	color: var(--color-first);
+	border-radius: 15px;
+	font-size: 1.8rem;
+	padding: 50px 20px;
+	margin: 70px 0;
+	text-align: center;
+	position: relative;
+  }
+  .study__all__pdf img{
+	display: none;
+  }
 .study__all__description{
 	padding: 50px 0;
 }
