@@ -218,6 +218,19 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
   }
+  #paralax1 {
+    /* The image used */
+    background-image: url("../assets/team.jpg");
+  
+    /* Set a specific height */
+    min-height: 200px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .reserved{
 	background-color: var(--color-black);
 	color: var(--color-grey);
@@ -363,6 +376,7 @@ footer{
 	font-size: 1.8rem;
 	padding: 50px 20px;
 	margin-top: 70px;
+	margin-bottom: 70px;
 	text-align: center;
 	position: relative;
 	height: 450px;
@@ -483,4 +497,123 @@ footer{
 	.study__check{
 		margin-top: 30px;
 	}
+}
+/* wdrożenia */
+.process__hero{
+	background-image: url(../assets/team.jpg);
+	position: relative;
+	background-color: var(--color-black);
+	display: flex;
+	margin: 100px 0;
+	padding-bottom: 50px;
+	border-radius: 15px;
+}
+.process__hero__dark{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-dar);
+	background: linear-gradient(352deg, rgba(46,46,46,1) 19%, rgba(181,181,181,1) 100%);
+	opacity: 80%;
+	border-radius: 15px;
+}
+
+.process__list{
+	background-color: var(--color-white);
+	padding: 20px;
+	width: 270px;
+	position: relative;
+	z-index: 1;
+	top: -30px;
+	left: 30px;
+	margin-bottom: 70px;
+	border-radius: 15px;
+	box-shadow:  3px 2px 10px -3px rgba(66, 68, 90, 1);
+}
+.process__list li{
+	font-size: 1.3rem;
+	border-bottom: 1px solid var(--color-grey);
+	padding: 20px 0;
+}
+.process__list__action {
+	background-color: var(--color-first);
+	width: 100%;
+	font-size: 1.3rem;
+	color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+}
+.process__hero__description{
+	padding: 300px 30px 0 350px;
+  	position: absolute;
+	color: var(--color-white);
+}
+.process__hero__description__title{
+	text-decoration: underline;
+  	font-size: 1.5rem;
+  	font-weight: 600;
+}
+.hero__title{
+	padding: 10px 0;
+}
+.process__about{
+	padding-bottom: 100px;
+	border-top: 2px solid var(--color-grey);
+	position: relative;
+}
+.process__about__list{
+	display: flex;
+	position: absolute;
+	justify-content: space-around;
+	width: 100%;
+	top: -20px;
+	padding: 0 100px;
+}
+.process__about__list p{
+	padding: 10px 25px;
+  border: 1px solid var(--color-grey);
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+.process__article{
+	display: flex;
+	padding-top: 80px;
+}
+.process__article__image{
+	width: 30%;
+}
+.process__article img{
+	max-width: 100%;
+	object-fit: cover;
+}
+.process__article__description{
+	width: 70%;
+	padding: 50px;
+}
+.process__article__description__p{
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	padding-bottom: 30px;
+}
+.process__full{
+	padding: 100px 0;
+}
+.process__full__tail, .process__full__tail ul{
+	padding-left: 100px;
+}
+.process__full__tail{
+	padding-top: 50px;
+}
+.process__full__tail li{
+	font-size: 1.1rem;
+	padding: 8px 0;
+}
+.process__full__tail li img{
+	position: relative;
+  bottom: -10px;
+  padding-right: 10px;
 }
