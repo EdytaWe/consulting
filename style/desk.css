@@ -207,20 +207,20 @@ footer{
 }
 #paralax {
     /* The image used */
-    background-image: url("../assets/team.jpg");
+    background-image: url("../assets/produkcja.jpg");
   
     /* Set a specific height */
     min-height: 300px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #paralax1 {
     /* The image used */
-    background-image: url("../assets/team.jpg");
+    background-image: url("../assets/fabryka1.jpg");
   
     /* Set a specific height */
     min-height: 200px;
@@ -500,7 +500,7 @@ footer{
 }
 /* wdrożenia */
 .process__hero{
-	background-image: url(../assets/team.jpg);
+	background-image: url(../assets/wdrozenia1.jpg);
 	position: relative;
 	background-color: var(--color-black);
 	display: flex;
@@ -619,7 +619,10 @@ footer{
   padding-right: 10px;
 }
 .team__hero{
-	background-image: url(../assets/team.jpg);
+	background-image: url(../assets/rece.avif);
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	
 }
 .team__hero__dark{

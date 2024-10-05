@@ -166,7 +166,7 @@ footer{
 }
 #paralax {
     /* The image used */
-    background-image: url("../assets/team.jpg");
+    background-image: url("../assets/wdrozenia1.jpg");
   
     /* Set a specific height */
     min-height: 300px;
@@ -477,7 +477,10 @@ footer{
   padding-right: 10px;
 }
 .team__hero{
-	background-image: url(../assets/team.jpg);
+	background-image: url(../assets/rece.avif);
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	position: relative;
 	background-color: var(--color-black);
 	display: flex;
