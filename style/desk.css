@@ -41,18 +41,24 @@ h3{
 }
 .navigation li {
 	text-transform: uppercase;
-	padding: 20px;
 	color: var(--color-black);
 	font-weight: 600;
 	transition: 0.5s;
 }
-.navigation li.active{
+.navigation a{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+}
+.navigation a.active{
 	color: #078586;
 }
-.navigation li:hover {
+.navigation a:hover {
 	background-color: var(--color-first);
 	color: var(--color-white);
 }
+
 
 .mobile__nav,
 .mobile__nav__close {
@@ -668,7 +674,7 @@ footer{
 }
 .team__tail{
 	min-width: 300px;
-  max-width: calc(100% / 3 - 50px);
+  width: calc(100% / 3 - 50px);
   height: 400px;
   margin: 10px 0;
   position: relative;
