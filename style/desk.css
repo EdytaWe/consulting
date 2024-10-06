@@ -5,6 +5,9 @@
 	--color-white: #fff;
 	--color-grey: #f0f3f9;
 }
+html{
+	scroll-behavior: smooth;
+}
 .container {
 	max-width: 1500px;
 	margin: 0 auto;
@@ -654,7 +657,7 @@ footer{
 .team__hero__description{
 	padding: 100px 30px 0 150px;
 }
-.team{
+.team__page{
 	background-color: var(--color-grey);
 	padding: 100px 0;
 }
@@ -666,7 +669,7 @@ footer{
 .team__tail{
 	min-width: 300px;
   max-width: calc(100% / 3 - 50px);
-  height: 340px;
+  height: 400px;
   margin: 10px 0;
   position: relative;
   z-index: 1;
@@ -680,9 +683,10 @@ footer{
 }
 .team__tail__description{
 	position: absolute;
-  bottom: 30px;
+  bottom: 0;
   padding: 20px;
-  transition: all 0.5s ease;
+  height: 200px;
+  
 }
 .team__tail:hover .team__tail__description:not(.team__button){
 	transform: translateX(-100%);
@@ -702,4 +706,23 @@ footer{
 }
 .team__tail:hover img{
 	transform: scale(1.08);
+}
+#pawel{
+	background-color: var(--color-grey);
+}
+.person{
+	display: flex;
+	justify-content: space-around;
+	padding: 100px 0;
+}
+.person img{
+	width: 40%;
+	max-height: 500px;
+	object-fit: cover;
+	object-position: 100% top;
+	border-radius: 15px;
+}
+.person__about{
+	max-width: 50%;
+
 }
