@@ -4,43 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PROcess Consulting - szkolenia, wdrożenia, doradztwo</title>
     <style>
-       
         header {
             width: 100%;
             position: fixed;
             z-index: 100;
             box-shadow: -3px 13px 17px -27px;
         }
+
         .page__banner {
-                height: 300px;
-            }
+            height: 300px;
+        }
+
         .page__banner h1 {
             font-size: 2.5rem;
             font-weight: 700;
             padding: 50px 0;
             position: absolute;
-bottom: 20px;
-left: 40%;
-color: #fff;
+            bottom: 20px;
+            left: 40%;
+            color: #fff;
         }
-        
+
         @media screen and (min-width: 800px) {
             .page__banner {
                 height: 300px;
             }
 
             .page__banner h1 {
-font-size: 4.5rem;
-font-weight: 700;
-position: absolute;
-bottom: 50px;
-left: 40%;
-color: #fff;
-}
+                font-size: 4.5rem;
+                font-weight: 700;
+                position: absolute;
+                bottom: 50px;
+                left: 40%;
+                color: #fff;
+            }
         }
     </style>
+    <meta name="description" content="PROcess Consulting oferuje profesjonalne szkolenia, wdrożenia oraz doradztwo w zakresie optymalizacji procesów biznesowych. Skorzystaj z naszego doświadczenia, aby zwiększyć efektywność swojej firmy.">
     <link rel="preload" as="image" href="./assets/banner.jpg">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/mobile.css" media="screen and (max-width:800px)">
@@ -79,16 +81,49 @@ color: #fff;
         </div>
     </header>
     <div class="page__banner" style="position: relative; background-color: black;">
-        <img src="./assets/bannerlittle.jpg" alt="" width="100" height="300" style="object-fit: cover;opacity: 50%; width: 100%; height: 300px;">
+        <img src="./assets/bannerlittle.jpg" alt="" width="100" height="300"
+            style="object-fit: cover;opacity: 50%; width: 100%; height: 300px;">
         <h1>Kontakt</h1>
     </div>
     <div class="container contact">
-        <div class="form"></div>
+        <div class="form">
+            <form action="">
+                <label for="name">Imię i nazwisko<input type="text" id="name" name="imię"></label>
+                <label for="e-mail">Adres mailowy <input type="text" name="e-mail" required></label>
+                <label for="text">Wiadomość<input type="textarea" placeholder="Jestem zainteresowany współpracą, proszę o kontakt"></label>
+            </form>
+        </div>
         <div class="contact__informations">
-            
+            <p class="little__title">Informacje kontaktowe</p>
+            <h2 class="section__title">Zaufaj naszym ekspertom</h2>
+            <div class="information__tail">
+                <img src="./assets/arrow-right-dark.svg" alt="">
+                <div class="information__tail__box">
+                    <h3>Obszar działalności</h3>
+                    <p>Działamy na terenie całego kraju</p>
+                </div>
+
+            </div>
+            <div class="information__tail">
+                <img src="./assets/arrow-right-dark.svg" alt="">
+                <div class="information__tail__box">
+                    <h3>Dane kontaktowe</h3>
+                    <p>mail:</p>
+                    <p>nr telefonów</p>
+                </div>
+
+            </div>
+            <div class="information__tail">
+                <img src="./assets/arrow-right-dark.svg" alt="">
+                <div class="information__tail__box">
+                    <h3>Godziny pracy</h3>
+                    <p>8-20 przez 7 dni w tygodniu</p>
+                </div>
+
+            </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="container footer__section">
             <div class="footer__tail">

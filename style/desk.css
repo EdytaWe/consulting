@@ -452,7 +452,9 @@ footer{
 			  transform: rotateY(360deg);
 	}
   }
-  
+.study__full{
+	border-top: 1px solid var(--color-grey);
+}
 .before__footer__container{
 	display: flex;
 }
@@ -510,6 +512,9 @@ footer{
 /* wdrożenia */
 .process__hero{
 	background-image: url(../assets/wdrozenia1.jpg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 	position: relative;
 	background-color: var(--color-black);
 	display: flex;
