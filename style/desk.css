@@ -240,6 +240,21 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
   }
+  #paralax2 {
+    /* The image used */
+    background-image: url("../assets/fabryka1.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+	width: 300px;
+	min-width: 150px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .reserved{
 	background-color: var(--color-black);
 	color: #989898;
@@ -736,4 +751,160 @@ footer{
 .person__about{
 	max-width: 50%;
 
+}
+.contact{
+	display: flex;
+}
+.form, .contact__informations{
+	width: 50%;
+	padding: 100px 20px;
+}
+.contact__informations{
+	padding-top: 150px;
+}
+.contact__form{
+	padding: 50px;
+	border-radius: 15px;
+	box-shadow: 2px 4px 14px -6px var(--color-dar);
+}
+.contact__box{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+.contact__box label{
+	text-transform: uppercase;
+	font-size: 1rem;
+	padding-bottom: 7px;
+}
+.contact__form input{
+	height: 56px;
+  line-height: 26px;
+  border-radius: 5px;
+  border: 1px solid #b1b2b4;
+  width: 100%;
+  padding: 4px 15px 0px 15px;
+  display: block;
+  font-size: 1.1rem;
+}
+.contact__form textarea{
+	height: 150px;
+  line-height: 26px;
+  border-radius: 5px;
+  border: 1px solid #b1b2b4;
+  width: 100%;
+  padding: 4px 15px 0px 15px;
+  display: block;
+  font-size: 1.1rem;
+}
+.contact__form input:focus, .contact__form textarea:focus {
+	outline: 0;
+	border: 2px solid var(--color-first);
+}
+.contact__form button{
+	width: 100%;
+	background-color: var(--color-first);
+	border: none;
+	border-radius: 15px 0 15px;
+	font-size: 1.2rem;
+	color: var(--color-white);
+	padding: 15px 0;
+	text-transform: uppercase;
+	margin-top: 20px;
+	transition: all 0.5s ease-in-out;
+}
+.contact__form button:hover{
+	transform: scale(1.1);
+	
+}
+.form__status{
+	display: none;
+}
+.success{
+	display: inline-block;
+	border: 1px solid var(--color-first);
+	color: var(--color-first);
+	border-radius: 15px;
+	padding: 15px;
+	text-align: center;
+	margin-top: 30px;
+	width: 100%;
+}
+.error{
+	display: inline-block;
+	border: 1px solid red;
+	color: red;
+	border-radius: 15px;
+	padding: 15px;
+	text-align: center;
+	margin-top: 30px;
+	width: 100%;
+}
+.information__tail{
+	border: 1px solid var(--color-grey);
+	border-radius: 15px;
+	margin: 30px 0;
+	padding: 20px 30px;
+	display: flex;
+}
+.img__back{
+	background-color: var(--color-first);
+	border-radius: 50%;
+	min-width: 40px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+.information__tail h3{
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.information__tail p{
+	font-size: 1.2rem;
+}
+.consulting__content__area{
+	padding-bottom: 100px;
+	display: flex;
+}
+.consulting__content{
+	padding: 30px 50px 0 50px;
+}
+.content__paragraph{
+	padding-bottom: 20px;
+	font-size: 1.1rem;
+}
+.consulting__all{
+	/* background-color: var(--color-dar); */
+	padding: 100px 0;
+}
+.consulting__tails{
+	display: flex;
+}
+.consulting__tail{
+	width: calc(100% / 3);
+	padding: 0 20px;
+}
+.consulting__tail img{
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.consulting__tail__info{
+	border-bottom: 2px solid var(--color-grey);
+	margin-bottom: 30px;
+}
+.consulting__tail__info p, .consulting__tail__info h3{
+	padding-bottom: 10px;
+}
+.consulting__number{
+	font-size: 3rem;
+	font-weight: 600;
+	opacity: 40%;
+	color: var(--color-dar);
+}
+.consulting__tail__info h3{
+	font-weight: 600;
 }
