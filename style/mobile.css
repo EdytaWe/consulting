@@ -688,3 +688,42 @@ footer{
 .information__tail p{
 	font-size: 1.2rem;
 }
+.consulting__content__area{
+	padding-bottom: 100px;
+	display: flex;
+}
+.consulting__content{
+	padding: 30px 0 0 0;
+}
+.content__paragraph{
+	padding-bottom: 20px;
+	font-size: 1.1rem;
+}
+.consulting__all{
+	/* background-color: var(--color-dar); */
+	padding: 50px 0;
+}
+.consulting__tail img{
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.consulting__tail__info{
+	border-bottom: 2px solid var(--color-grey);
+	margin-bottom: 30px;
+}
+.consulting__tail__info p, .consulting__tail__info h3{
+	padding-bottom: 10px;
+}
+.consulting__number{
+	font-size: 3rem;
+	font-weight: 600;
+	opacity: 40%;
+	color: var(--color-dar);
+}
+.consulting__tail__info h3{
+	font-weight: 600;
+}
+#paralax3{
+	display: none;
+}
