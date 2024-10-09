@@ -308,6 +308,9 @@ footer{
 .article{
 	padding: 100px 200px;
 }
+.article a{
+	font-weight: 600;
+}
 .article__little__title{
 	font-weight: 600;
   padding: 20px 0;
