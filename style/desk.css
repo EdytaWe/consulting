@@ -216,7 +216,7 @@ footer{
 }
 #paralax {
     /* The image used */
-    background-image: url("../assets/produkcja.jpg");
+    background-image: url("../assets/paralax.jpg");
   
     /* Set a specific height */
     min-height: 300px;
@@ -242,7 +242,7 @@ footer{
   }
   #paralax2 {
     /* The image used */
-    background-image: url("../assets/fabryka1.jpg");
+    background-image: url("../assets/paralax2.jpg");
   
     /* Set a specific height */
     min-height: 500px;
@@ -281,17 +281,24 @@ footer{
 .blog__article__image__title{
 	position: absolute; top: 0;background-color: var(--color-dar);color: #fff;padding: 12px;border-radius: 10px 0;text-transform: uppercase;
 }
-/* .blog__article__description::after{
-	content: '';
-	position: absolute;
-	width: 300px;
-	height: 2px;
-	background-color: var(--color-grey);
-	bottom: 45px;
-} */
 .blog__article__description{
 	padding: 40px;
 }
+.blog__article__author{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	border-top: 2px solid var(--color-grey);
+	margin-top: 30px;
+	padding-top: 30px;
+}
+.blog__article__author img{
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+	margin-left: 20px;
+}
+
 .article__data{
 	text-transform: uppercase;
 	color: var(--color-first);
@@ -702,10 +709,20 @@ footer{
   background-color: black;
   transition: 0.5s ease;
   border-radius: 15px;
+  position: relative;
 }
 .team__tail img{
 	border-radius: 15px;
 	transition: all 1s ease;
+}
+.team__tail__dark{
+	background-color: #0000006e;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 15px;
+  transition: all 1s ease;
 }
 .team__tail__description{
 	position: absolute;
@@ -717,6 +734,9 @@ footer{
 .team__tail:hover .team__tail__description:not(.team__button){
 	transform: translateX(-100%);
 	opacity: 0;
+}
+.team__tail:hover .team__tail__dark{
+	transform: scale(1.08);
 }
 .team__button{
 	position: absolute;

@@ -18,7 +18,23 @@
             font-weight: 700;
             padding: 50px 0;
         }
-        
+        .article__author {
+                position: absolute;
+                display: flex;
+                bottom: 50px;
+                right: 20px;
+                color: #fff;
+                align-items: center;
+            }
+            .article__author img{
+                object-fit: cover;
+                object-position: top;
+                border-radius: 50%;
+                margin-left: 20px;
+            }
+            .article__author p{
+                text-align: end;
+            }
         @media screen and (min-width: 800px) {
             .page__banner {
                 height: 300px;
@@ -29,6 +45,9 @@
                 font-weight: 700;
                 text-align: center;
                 padding-bottom: 50px;
+            }
+            .article__author{
+                bottom: 10px;
             }
         }
     </style>
@@ -61,7 +80,7 @@
                     <li><a href="../blog.html" class="active">blog</a></li>
                     <li><a href="../zespol.html">zespół</a></li>
                     <li><a href="../kontakt.html">kontakt</a></li>
-                    
+
                 </ul>
             </nav>
             <span class="mobile__nav"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
@@ -71,43 +90,68 @@
         </div>
     </header>
     <div class="page__banner" style="position: relative; background-color: black;">
-        <img src="../assets/team.jpg" alt="" width="100" height="300" style="object-fit: cover;opacity: 50%; width: 100%; height: 300px;">
+        <img src="../assets/books.jpg" alt="" width="100" height="300"
+            style="object-fit: cover;opacity: 50%; width: 100%; height: 300px;">
         <p class="tags">
 
             <span class="tag">blog</span>
             <span class="tag">optymalizacja</span>
             <span class="tag">produkcja</span>
         </p>
+        <div class="article__author">
+            <p>AUTOR<br>Krzysztof Charkot</p>
+            <img src="../assets/krzysztof.jpg" alt="" width="50" height="50">
+        </div>
 
-        
     </div>
     <article class="article container">
-        <h1 class="article__title">Optymalizacja zatrudnienia w produkcji – jak poprawić efektywność i obniżyć koszty?</h1>
-        <p class="article__content">Optymalizacja zatrudnienia w produkcji to kluczowy element strategii firm, które chcą zwiększyć swoją wydajność, obniżyć koszty i jednocześnie zapewnić najwyższą jakość produktów. Odpowiednie zarządzanie zespołem, właściwy dobór pracowników oraz efektywne planowanie zasobów ludzkich to fundamenty, które pozwalają na lepsze wykorzystanie dostępnych zasobów i minimalizację strat.<br>
+        <h1 class="article__title">Optymalizacja zatrudnienia w produkcji &minus; jak poprawić efektywność i obniżyć
+            koszty?</h1>
+        <p class="article__content">Optymalizacja zatrudnienia w produkcji to kluczowy element strategii firm, które
+            chcą zwiększyć swoją wydajność, obniżyć koszty i jednocześnie zapewnić najwyższą jakość produktów.
+            Odpowiednie zarządzanie zespołem, właściwy dobór pracowników oraz efektywne planowanie zasobów ludzkich to
+            fundamenty, które pozwalają na lepsze wykorzystanie dostępnych zasobów i minimalizację strat.<br>
 
             Poniżej przedstawiamy najważniejsze aspekty optymalizacji zatrudnienia w sektorze produkcyjnym.</p>
         <h2 class="section__title">1. Analiza potrzeb kadrowych</h2>
-        <p class="aticle__content">Podstawą każdej strategii optymalizacji zatrudnienia jest dokładna analiza potrzeb kadrowych. Kluczowe pytania, na które firma musi sobie odpowiedzieć to:
+        <p class="aticle__content">Podstawą każdej strategii optymalizacji zatrudnienia jest dokładna analiza potrzeb
+            kadrowych. Kluczowe pytania, na które firma musi sobie odpowiedzieć to:
 
             Jakie stanowiska są niezbędne do realizacji planu produkcji?
             Ilu pracowników potrzebujemy w poszczególnych fazach produkcji?
             Czy obecne zasoby ludzkie są wystarczające, czy istnieje potrzeba rekrutacji?
-            Przeprowadzenie dokładnej analizy pozwala na lepsze zrozumienie, które procesy wymagają większej liczby pracowników, a które można zautomatyzować lub usprawnić. Dzięki temu można uniknąć nadmiernego zatrudniania oraz optymalnie rozłożyć siły w zespole.</p>
-            <h2 class="section__title">2. Automatyzacja procesów</h2>
-        <p class="aticle__content">Automatyzacja to jeden z kluczowych trendów w nowoczesnej produkcji. Wykorzystanie zaawansowanych technologii pozwala na redukcję liczby pracowników na liniach produkcyjnych, jednocześnie zwiększając wydajność i precyzję pracy.
+            Przeprowadzenie dokładnej analizy pozwala na lepsze zrozumienie, które procesy wymagają większej liczby
+            pracowników, a które można zautomatyzować lub usprawnić. Dzięki temu można uniknąć nadmiernego zatrudniania
+            oraz optymalnie rozłożyć siły w zespole.</p>
+        <h2 class="section__title">2. Automatyzacja procesów</h2>
+        <p class="aticle__content">Automatyzacja to jeden z kluczowych trendów w nowoczesnej produkcji. Wykorzystanie
+            zaawansowanych technologii pozwala na redukcję liczby pracowników na liniach produkcyjnych, jednocześnie
+            zwiększając wydajność i precyzję pracy.
 
-            Nie oznacza to jednak, że automatyzacja zastępuje pracowników. W rzeczywistości optymalizacja zatrudnienia polega na przeniesieniu ludzi do bardziej wartościowych zadań, takich jak kontrola jakości, utrzymanie ruchu czy zarządzanie procesami produkcyjnymi.</p>
-            <h3 class="article__little__title">3. Doskonalenie kompetencji pracowników</h3>
-        <p class="aticle__content">Inwestowanie w rozwój kompetencji pracowników jest kluczowe dla długoterminowej optymalizacji zatrudnienia. Wprowadzenie programów szkoleń i rozwoju pozwala na zwiększenie efektywności zespołu oraz lepsze wykorzystanie potencjału zatrudnionych osób. Pracownicy o szerokim wachlarzu umiejętności mogą przejmować różne role w zależności od potrzeb, co z kolei zwiększa elastyczność przedsiębiorstwa.
+            Nie oznacza to jednak, że automatyzacja zastępuje pracowników. W rzeczywistości optymalizacja zatrudnienia
+            polega na przeniesieniu ludzi do bardziej wartościowych zadań, takich jak kontrola jakości, utrzymanie ruchu
+            czy zarządzanie procesami produkcyjnymi.</p>
+        <h3 class="article__little__title">3. Doskonalenie kompetencji pracowników</h3>
+        <p class="aticle__content">Inwestowanie w rozwój kompetencji pracowników jest kluczowe dla długoterminowej
+            optymalizacji zatrudnienia. Wprowadzenie programów szkoleń i rozwoju pozwala na zwiększenie efektywności
+            zespołu oraz lepsze wykorzystanie potencjału zatrudnionych osób. Pracownicy o szerokim wachlarzu
+            umiejętności mogą przejmować różne role w zależności od potrzeb, co z kolei zwiększa elastyczność
+            przedsiębiorstwa.
 
             Przykłady działań rozwojowych to:
-            
-            Szkolenia techniczne – rozwijające umiejętności obsługi maszyn i technologii.
-            Kursy zarządzania – pozwalające na awansowanie pracowników na stanowiska kierownicze.
-            Programy rozwoju osobistego – podnoszące kompetencje miękkie, takie jak komunikacja czy zarządzanie czasem.</p><br><br>
-            <p>Optymalizacja zatrudnienia w produkcji to kompleksowy proces, który obejmuje zarówno analizę potrzeb kadrowych, wprowadzenie nowoczesnych technologii, jak i rozwijanie kompetencji pracowników. Elastyczność w zatrudnieniu, automatyzacja, a także przemyślany outsourcing mogą znacząco przyczynić się do poprawy efektywności oraz obniżenia kosztów operacyjnych.
 
-                Kluczem do sukcesu jest stałe monitorowanie wyników oraz dostosowywanie strategii zatrudnienia do zmieniających się warunków rynkowych i technologicznych. Dzięki temu firmy mogą nie tylko zwiększać swoją konkurencyjność, ale także skutecznie odpowiadać na rosnące wymagania klientów.</p>
+            Szkolenia techniczne &minus; rozwijające umiejętności obsługi maszyn i technologii.
+            Kursy zarządzania &minus; pozwalające na awansowanie pracowników na stanowiska kierownicze.
+            Programy rozwoju osobistego &minus; podnoszące kompetencje miękkie, takie jak komunikacja czy zarządzanie
+            czasem.</p><br><br>
+        <p>Optymalizacja zatrudnienia w produkcji to kompleksowy proces, który obejmuje zarówno analizę potrzeb
+            kadrowych, wprowadzenie nowoczesnych technologii, jak i rozwijanie kompetencji pracowników. Elastyczność w
+            zatrudnieniu, automatyzacja, a także przemyślany outsourcing mogą znacząco przyczynić się do poprawy
+            efektywności oraz obniżenia kosztów operacyjnych.
+
+            Kluczem do sukcesu jest stałe monitorowanie wyników oraz dostosowywanie strategii zatrudnienia do
+            zmieniających się warunków rynkowych i technologicznych. Dzięki temu firmy mogą nie tylko zwiększać swoją
+            konkurencyjność, ale także skutecznie odpowiadać na rosnące wymagania klientów.</p>
     </article>
     <footer>
         <div class="container footer__section">
@@ -123,7 +167,8 @@
                 <p style="display: flex;align-items: center; padding-bottom: 15px;"> <img
                         src="../assets/mingcute--phone-fill.svg" alt=""
                         style="background-color: #078586; padding: 7px; border-radius: 50%; margin-right: 15px;">tel.
-                    532 461 729</p>
+                        tel.
+                        789 779 130; 798 023 662; 519 564 204</p>
                 <p style="display: flex;align-items: center;"> <img src="../assets/cib--mail-ru.svg" alt=""
                         style="background-color: #078586; padding: 7px; border-radius: 50%; margin-right: 15px;">mail:
                     kontakt@processconsulting.pl</p>
@@ -132,12 +177,8 @@
             </div>
             <div class="footer__tail" style="text-align: end;">
                 <p style="font-size: 1.2rem; font-weight: 600; padding-bottom: 20px;">Odwiedź nasze social media</p>
-                <a href=""><img src="../assets/gg--facebook.svg" width="40" height="40" alt=""
-                        style="background-color: #078586; padding: 7px; border-radius: 50%; margin-right: 15px;"></a>
-                <a href=""><img src="../assets/akar-icons--linkedin-fill.svg" width="40" height="40" alt=""
-                        style="background-color: #078586; padding: 7px; border-radius: 50%;"></a>
-
-
+                <a href="https://www.facebook.com/profile.php?id=61566815977463" target="_blank"><img src="./assets/gg--facebook.svg" width="40" height="40" alt="" style="background-color: #078586; padding: 7px; border-radius: 50%; margin-right: 15px;"></a>
+                <a href="https://www.linkedin.com/company/process1consulting" target="_blank"><img src="./assets/akar-icons--linkedin-fill.svg" width="40" height="40" alt="" style="background-color: #078586; padding: 7px; border-radius: 50%;"></a>
             </div>
         </div>
         <div class="reserved">&copy; 2024 With passion by Edyta N.</div>
