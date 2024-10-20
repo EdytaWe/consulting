@@ -1,5 +1,10 @@
 const msgStatus = document.querySelector(".form__status");
-console.log(document.location.search);
+const name = document.querySelector('#name');
+const email = document.querySelector("#e-mail");
+const msg = document.querySelector('#msg');
+
+
+
 if(document.location.search === "?mail_status=sent"){
     msgStatus.classList.add('success');
     msgStatus.textContent = "Wiadomość została wysłana";
