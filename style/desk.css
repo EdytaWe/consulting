@@ -13,6 +13,9 @@ html{
 	margin: 0 auto;
 	padding: 0 50px;
 }
+.smallnavbar{
+	max-height: 70px;
+}
 h3{
 	font-size: 1.5rem;
 }

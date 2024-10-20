@@ -75,6 +75,29 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"
         media="print" onload="this.media='all'">
         <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+        <script type="application/ld+json">
+            {
+                "@context" : "https://schema.org",
+                "@type" : "Organization",
+                "url" : "https://processconsulting.pl/",
+                "logo" : "https:{{page.BaseHref}}{{config.Shop.ImageUrl}}",
+                "name": "{{ config.Shop.ShortName }}",
+                "legalName": "{{ config.Shop.Name }}",
+
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "{{config.Shop.Address.Street}} {{config.Shop.Address.StreetNo}}{% if config.Shop.Address.UnitNo <> "" -%}/{{config.Shop.Address.UnitNo}}{% endif -%}",
+                    "addressLocality": "{{config.Shop.Address.City}}",
+                    "postalCode": "{{config.Shop.Address.ZipCode}}",
+                    "addressRegion": "{{config.Shop.Address.State}}",
+                    "addressCountry" : "{{config.Shop.Address.Country}}"
+                },
+
+                "faxNumber" : "{{config.Shop.Contact.Fax}}",
+                "telephone" : "{{config.Shop.Contact.PhoneNo}}",
+                "taxID" : "{{config.Shop.TIN}}"
+            }
+            </script>
 </head>
 
 <body class="league-spartan-normal">
@@ -136,9 +159,7 @@
                         <img src="./assets/doradztwo1.avif" alt="" width="100%" height="430" style="object-fit: cover;">
                         <div class="offer__tail__description" style="color: #fff;">
                             <h3 style="font-weight: 600; font-size: 1.5rem; padding-bottom: 5px;">Doradztwo</h3>
-                            <p class="offer__tail__description__show" style="padding-bottom: 5px;">Lorem ipsum dolor sit
-                                amet consectetur adipisicing elit. Officiis, nisi tenetur adipisci quasi voluptate eum
-                                quia eveniet consequuntur vitae.</p>
+                            <p class="offer__tail__description__show" style="padding-bottom: 5px;">Wspieramy firmy w osiąganiu sukcesu poprzez optymalizację procesów, wdrażanie nowoczesnych rozwiązań oraz budowanie silnych struktur organizacyjnych.</p>
                             <p><img src="./assets/arrow-right.svg" alt="" style="padding-right: 10px;" loading="lazy">Czytaj więcej</p>
                         </div>
                     </a>
@@ -237,8 +258,8 @@
             </div>
             <div class="footer__tail">
                 <p style="font-size: 1.2rem; font-weight: 600;padding-bottom: 20px;">Bądźmy w kontakcie</p>
-                <p style="display: flex;align-items: center; padding-bottom: 15px;"> <img src="./assets/mingcute--phone-fill.svg" alt="" style="background-color: #078586; padding: 7px; border-radius: 50%; margin-right: 15px;">tel. tel.
-                    789 779 130; 798 023 662; 519 564 204</p>
+                <p style="display: flex;align-items: center; padding-bottom: 15px;letter-spacing: 1px;"> <img src="./assets/mingcute--phone-fill.svg" alt="" style="background-color: #078586; padding: 7px; border-radius: 50%; margin-right: 15px;">tel.
+                    789 779 130<br>tel. 798 023 662<br>tel. 519 564 204</p>
                 <p style="display: flex;align-items: center;"> <img src="./assets/cib--mail-ru.svg" alt="" style="background-color: #078586; padding: 7px; border-radius: 50%; margin-right: 15px;">mail: kontakt@processconsulting.pl</p>
                 
 
